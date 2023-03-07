@@ -1,0 +1,23 @@
+@import '../../assets/sass/colors';
+.navbar {
+    background-color: $theme-color1;
+    .navbar-nav {
+        .nav-link {
+            color: $theme-color5;
+        }
+    }
+    .navbar-brand {
+        .main-logo {
+            width: 80px;
+        }
+    }
+    .hamburger {
+        color: white;
+        font-size: 36px;
+        cursor: pointer;
+        @media (min-width:992px) {
+            display: none;
+        }
+    }
+
+}

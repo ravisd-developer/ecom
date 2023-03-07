@@ -7,13 +7,22 @@ const Menus = [
         name : 'About',
         href : '/about'
     },
-    {
-        name : 'Contact',
-        href : '/contact'
-    },
+
     {
         name : 'Shop',
         href : '/shop'
+    },
+    {
+        name : 'Features',
+        href : '/features'
+    },
+    {
+        name : 'Blog',
+        href : '/blog'
+    },
+    {
+        name : 'Contact',
+        href : '/contact'
     }
 ]
 
