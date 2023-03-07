@@ -11,11 +11,13 @@ function App() {
     <>
       <BrowserRouter >
         <Routes>
+
           <Route index element={<Home />} />
           <Route path='contact' element={<Contact />} />
           <Route path="about" element={<About />} />
           <Route path="shop" element={<Shoping />} />
         </Routes>
+
       </BrowserRouter>
     </>
   );
