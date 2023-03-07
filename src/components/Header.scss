@@ -1,0 +1,9 @@
+@import '../assets/colors';
+.navbar {
+    background-color: $theme-color1;
+    .navbar-nav {
+        .nav-link {
+            color: $theme-color5;
+        }
+    }
+}
