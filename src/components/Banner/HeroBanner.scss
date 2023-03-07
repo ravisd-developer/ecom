@@ -1,0 +1,15 @@
+@import '../../assets/sass/colors';
+
+.banner {
+    &--pre-content {
+        color: $logo-color3;
+        font-size: 25px;
+    }
+
+    &--heading {
+        font-size: 35px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $logo-color2;
+    }
+}
