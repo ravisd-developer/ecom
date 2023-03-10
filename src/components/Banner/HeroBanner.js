@@ -1,9 +1,11 @@
 import { Col, Container, Row, Button } from "react-bootstrap";
-import React, { Fragment } from "react";
+import React from "react";
+import BannerImg from '../../assets/images/banner-shoes.png'
+import BannerImg1 from '../../assets/images/banner2.png'
 import './HeroBanner.scss'
 function HeroBanner() {
     return (
-        <Container fluid className='banner' style={{ background: '#c4c4c48a'}}>
+        <Container fluid className='banner'>
             <Container >
                 <Row className="justify-content-center">
                     <Col style={{ minHeight: '550px', display:'flex', alignItems:'center' }}>
@@ -14,11 +16,11 @@ function HeroBanner() {
                             <div className="banner--heading mb-5">
                                 large Collection and Variety
                             </div>
-                            <Button variant="primary">Shop Now</Button>
+                            <a href="/shop" className="button button-dark">Shop Now</a>
                         </div>
                     </Col>
-                    <Col className="d-none d-lg-block" lg='4' >
-
+                    <Col className="d-none d-lg-flex justify-content-center align-items-center" lg='4' >
+                        <img className="banner-img" src={BannerImg1}/>
                     </Col>
                 </Row>
             </Container>

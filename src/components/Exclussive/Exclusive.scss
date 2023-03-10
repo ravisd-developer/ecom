@@ -1,0 +1,25 @@
+@import '../../assets/sass/colors';
+
+.exclusive-deals {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    background-color: $misty-blue;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    p.heading {
+        font-size: 41px;
+        color: $black;
+        font-weight: 700;
+    }
+    p.desc {
+        font-size: 20px;
+        color: $black;
+        font-weight: 400;
+    }
+}
