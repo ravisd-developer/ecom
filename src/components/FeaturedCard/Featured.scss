@@ -1,0 +1,48 @@
+@import '../../assets/sass/colors';
+@import '../../assets/sass/mixins';
+
+.featured {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 15px;
+    row-gap: 15px;
+    padding: 33px 0px;
+    flex-wrap: wrap;
+
+    &--card {
+        min-width: 300px;
+        flex: 1 1 400px;
+    }
+
+    .card--badge {
+        color: $gunmetal-gray;
+    }
+
+    .card-img {
+        min-height: 250px;
+        object-fit: cover;
+    }
+
+    .card-title {
+        color: $black;
+    }
+}
+
+.feature-bg 
+{
+    position: relative;
+    &::after {
+        content: "";
+        background: #B0B7C0 !important;
+        position: absolute;
+        right: 0;
+        height: 65%;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+        @include mobile(){
+            height: 100%;
+        }
+    } 
+}

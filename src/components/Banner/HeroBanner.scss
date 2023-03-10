@@ -1,8 +1,9 @@
 @import '../../assets/sass/colors';
 
 .banner {
+    background-color: $white;
     &--pre-content {
-        color: $logo-color3;
+        color: $gunmetal-gray;
         font-size: 25px;
     }
 
@@ -10,6 +11,9 @@
         font-size: 35px;
         text-transform: uppercase;
         font-weight: 700;
-        color: $logo-color2;
+        color: $black;
+    }
+    .banner-img {
+        max-height: 500px;
     }
 }

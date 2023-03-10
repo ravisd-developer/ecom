@@ -1,0 +1,23 @@
+@import '../assets/sass/colors';
+.pdp 
+{
+    &.pdp-image-section img {
+        height: 417px;
+        display: flex;
+        margin: auto;
+    }
+    &--rating {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        svg {
+            color: $gunmetal-gray;
+            margin-right: 10px;
+        }
+    }
+    &--buying-controls {
+        button {
+            margin-right: 10px;
+        }
+    }
+}

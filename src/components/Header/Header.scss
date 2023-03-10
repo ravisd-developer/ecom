@@ -1,9 +1,9 @@
 @import '../../assets/sass/colors';
 .navbar {
-    background-color: $theme-color1;
+    background-color: $black;
     .navbar-nav {
         .nav-link {
-            color: $theme-color5;
+            color: $white;
         }
     }
     .navbar-brand {
@@ -12,7 +12,7 @@
         }
     }
     .hamburger {
-        color: white;
+        color: $white;
         font-size: 36px;
         cursor: pointer;
         @media (min-width:992px) {
