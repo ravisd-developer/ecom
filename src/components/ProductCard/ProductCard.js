@@ -1,7 +1,18 @@
 import './ProductCard.scss';
-import { BsFillCartCheckFill, BsFillArrowRightSquareFill, BsFillStarFill} from "react-icons/bs";
+import { BsFillCartCheckFill, BsFillArrowRightSquareFill, BsFillStarFill, BsWindowSidebar} from "react-icons/bs";
+import { useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getCartItems, setCartItems } from '../../redux/actions/CartActions';
 function ProductCard(props) {
     const { id, title, price, category, image, description, rating:{rate, count } } = props.data;
+    const dispatch = useDispatch();
+    const addToCart = (id) => {
+        const pro = {
+            id: id,
+            name: `custom Name ${id}`,
+        }
+        dispatch(setCartItems(pro))
+    };
     return (
         <>
             <div className="product-card">
@@ -17,7 +28,7 @@ function ProductCard(props) {
                     <div className="product-bottom-details">
                         <div className="product-price"><small></small>${price}</div>
                         <div className="product-links">
-                            <a href=""><BsFillCartCheckFill /></a>
+                            <a onClick={() => addToCart(id)}><BsFillCartCheckFill /></a>
                             <a href={`product/${id}`}><BsFillArrowRightSquareFill /></a>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -10,13 +10,13 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import  './Header.scss'
 import Logo from '../../assets/images/logo.png'
 import { RxHamburgerMenu } from "react-icons/rx";
-
+import { useSelector } from 'react-redux';
 function Header() {
   const expand = 'lg';
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
+  const cartItemsCount = useSelector((state) =>  state.allCartItems);
   return (
     <Navbar key={expand} bg="light" expand={expand} className="">
           <Container >
@@ -48,7 +48,7 @@ function Header() {
                     className="me-2"
                     aria-label="Search"
                   />
-                  <Button variant="outline-success">Search</Button>
+                  <Button variant="outline-success">Search </Button>
                 </Form>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

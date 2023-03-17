@@ -9,8 +9,9 @@ import Features from './pages/Features';
 import Blog from './pages/Blog';
 import Product from './pages/Product';
 import './assets/sass/base.scss';
-
+import { useEffect } from 'react';
 function App() {
+
   return (
     <>
       <BrowserRouter >
